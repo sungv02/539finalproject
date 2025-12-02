@@ -1,0 +1,448 @@
+/* Skip to Main */
+
+.skip a {
+  position: absolute;
+  top: -65px;
+}
+
+.skip a:focus {
+  top: 25px;
+}
+
+:focus {
+  border: 5px dashed #00274C;
+}
+
+/* Nav Top */
+
+nav ul {
+  margin: 10px;
+  padding: 20px;
+  border-bottom: 1px solid #dddddd;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+nav li {
+  float: none;
+}
+
+nav li a {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  color: #00274C;
+  text-decoration: none;
+  position: relative;
+}
+
+nav li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  /* Initially hidden */
+  height: 2px;
+  /* Thickness of the underline */
+  bottom: 0;
+  /* Position at the bottom of the link */
+  left: 0;
+  background-color: #00274C;
+  /* Color of the underline */
+  transition: width 0.2s ease-in-out;
+  /* Smooth transition for width */
+}
+
+nav li a:hover::after,
+a:focus::after {
+  width: 100%;
+}
+
+nav li a.active {
+  font-weight: bold;
+}
+
+/* Navigation GRID */
+
+.grid-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.index {
+  grid-column: 3/4;
+}
+
+.about {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.contact {
+  grid-column: 5/6;
+  grid-row: 1/-1;
+}
+
+/* Header GRID */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
+.title {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  justify-self: center;
+}
+
+nav {
+  grid-column: 1/-1;
+}
+
+
+/* Font */
+
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Header */
+
+h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+/* Body Font */
+
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* Table */
+
+table {
+  font-family: "Nunito Sans", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  display: none;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr {
+  background-color: #ffffff;
+}
+
+/* Table Row Clickable */
+
+.project-row {
+  cursor: pointer;
+}
+
+.project-row:hover,
+.project-row:focus {
+  background-color: #f0f0f0;
+}
+
+/* Images */
+
+img {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  padding: 0px;
+}
+
+/* Grid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+header {
+  grid-column: 1/-1;
+}
+
+aside {
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+
+.main-container {
+  grid-column: 1/-1;
+}
+
+/* Content Grid */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 18px;
+  margin: 10px;
+}
+
+.print1 {
+  grid-column: 1/-1;
+}
+
+.print2 {
+  grid-column: 1/-1;
+}
+
+.print3 {
+  grid-column: 1/-1;
+}
+
+.print4 {
+  grid-column: 1/-1;
+}
+
+.print5 {
+  grid-column: 1/-1;
+}
+
+/* #print6 {
+  grid-column: 1/-1;
+}
+
+#print7 {
+  grid-column: 1/-1;
+}
+
+#print8 {
+  grid-column: 1/-1;
+}
+
+#print9 {
+  grid-column: 1/-1;
+}
+
+#print10 {
+  grid-column: 1/-1;
+} */
+
+/* Project Page Content Grid */
+
+#art1 {
+  grid-column: 1/-1;
+}
+
+#art2 {
+  grid-column: 1/4;
+}
+
+#art3 {
+  grid-column: 4/-1;
+}
+
+#art4 {
+  grid-column: 1/4;
+}
+
+#art5 {
+  grid-column: 4/-1;
+}
+
+#art6 {
+  grid-column: 1/-1;
+}
+
+/* Project Description */
+
+.project-desc {
+  grid-column: 1/-1;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* About */
+
+.about-me {
+  grid-column: 1/-1;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Contact */
+
+.contact-me {
+  grid-column: 1/-1;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Contact Form */
+
+.responsive-form {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #dddddd;
+  background-color: #f2f2f2;
+  padding: 20px;
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+label {
+  flex: 100%;
+  margin-bottom: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+}
+
+input[type=text],
+select {
+  flex: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+textarea {
+  flex: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #00274C;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+@media screen and (min-width: 1000px) {
+  
+  /* Table */
+
+  table {
+    font-family: "Nunito Sans", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: table;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr {
+    background-color: #ffffff;
+  }
+
+  /* Table Row Clickable */
+
+  .project-row {
+    cursor: pointer;
+  }
+
+  .project-row:hover,
+  .project-row:focus {
+    background-color: #f0f0f0;
+  }
+
+  /* Aside & Main split */
+
+  .grid-container {
+    gap: 5px;
+  }
+  
+  aside {
+    grid-column: 1/4;
+    margin: 20px;
+  }
+
+  .welcome {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .main-container {
+    grid-column: 4/-1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    height: 775px;
+    overflow-y: auto;
+    gap: 0px;
+    margin: 0px;
+  }
+
+  main {
+    margin: 0px;
+  }
+
+  header {
+    grid-column: 1/4;
+    align-self: start;
+  }
+
+  footer {
+    grid-column: 1/4;
+    grid-row-end: 4;
+    align-content: end;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  img {
+    margin: 10px auto;
+  }
+
+  img:hover {
+    opacity: 0.6;
+  }
+
+  
+}

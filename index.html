@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div tabindex="0" class="skip"><a href="#main">Skip to Main Content</a></div>
+            <nav>
+                <ul>
+                    <div class="grid-nav">
+                        <li class="index"><a href="index.html">Index</a></li>
+                        <li class="about"><a href="about.html">About</a></li>
+                        <li class="contact"><a href="contact.html">Contact</a></li>
+                    </div>
+                </ul>
+
+            </nav>
+            <div class="title" id="title">
+                <section>
+                    <h1>Victoria Sung</h1>
+                </section>
+            </div>
+        </header>
+        <aside>
+            <section class="welcome">
+                <h2>Artist Statement</h2>
+                <p>My body of work combines <strong>mixed media</strong> and <strong>poetry</strong> to explore <strong>themes of loss, tragedy, and hope.</strong> Much of my work is influenced by growing up in suburban Ohio to Korean immigrant parents. Specifically, I am interested in capturing how wider economic and cultural forces affect the daily lives of individuals. </p>
+            </section>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Year</th>
+                </tr>
+                <tr class="project-row" data-href="project1.html" tabindex="0">
+                    <!---Experiment to see if a-href is better-->
+                    <td>01</td>
+                    <td>Bedside Mourning - oil pastel</td>
+                    <td>2024</td>
+                </tr>
+                <tr class="project-row" data-href="project2.html" tabindex="0">
+                    <td>02</td>
+                    <td>This is another project description.</td>
+                    <td>2023</td>
+                </tr>
+                <tr class="project-row" data-href="project3.html" tabindex="0">
+                    <td>03</td>
+                    <td>This is a sample project description.</td>
+                    <td>2022</td>
+                </tr>
+                <tr class="project-row" data-href="project4.html" tabindex="0">
+                    <td>04</td>
+                    <td>This is a test project description.</td>
+                    <td>2021</td>
+                </tr>
+                <tr class="project-row" data-href="project5.html" tabindex="0">
+                    <td>05</td>
+                    <td>This is a final project description.</td>
+                    <td>2020</td>
+                </tr>
+            </table>
+        </aside>
+        <div class="main-container" id="main" tabindex="-1">
+            <main>
+                <div class="print1" tabindex="0">
+                    <a href="project1.html">
+                    <img src="images/IMG_20251119_0002_edited.png" id="print1" alt="A sample image for demonstration purposes.">
+                    </a>
+                </div>
+                <div class="print2" tabindex="0">
+                    <a href="project2.html">
+                    <img src="images/IMG_20251119_0010_edited.png" id="print2" alt="A sample image for demonstration purposes.">
+                    </a>
+                </div>
+                <div class="print3" tabindex="0">
+                    <a href="project3.html">
+                    <img src="images/IMG_20251119_0017_edited.png" id="print3" alt="A sample image for demonstration purposes.">
+                    </a>
+                </div>
+                <div class="print4" tabindex="0">
+                    <a href="project4.html">
+                    <img src="images/IMG_20251119_0008_edited.png" id="print4" alt="A sample image for demonstration purposes.">
+                    </a>
+                </div>
+                <div class="print5" tabindex="0">
+                    <a href="project5.html">
+                    <img src="images/IMG_20251119_0004_edited.png" id="print5" alt="A sample image for demonstration purposes.">
+                    </a>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>Victoria © <span id="year"></span></p>
+        </footer>
+    </div>
+</body>
+<script src="js/jsIndex.js"></script>
+
+</html>
