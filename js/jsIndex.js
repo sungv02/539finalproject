@@ -11,3 +11,21 @@ document.querySelectorAll('tr[data-href]').forEach(row => {
             }
         });
     });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const contactForm = document.getElementById('contactForm');
+  const successPopup = document.getElementById('successPopup');
+  const closePopupBtn = document.getElementById('closePopup');
+
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+    setTimeout(() => {
+      successPopup.style.display = 'block';
+      contactForm.reset();
+    }, 500);
+  });
+
+  closePopupBtn.addEventListener('click', () => {
+    successPopup.style.display = 'none';
+  });
+});

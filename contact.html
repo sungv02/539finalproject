@@ -42,8 +42,7 @@
                     <p>Hello! You can reach me at victoria@example.com or follow me on social media.</p>
                 </section>
                 <div class="responsive-form">
-
-                    <form action="/action_page.php">
+                    <form id="contactForm">
                         <label for="fname">First Name:</label>
                         <input type="text" id="fname" name="fname" placeholder="First name">
 
@@ -58,14 +57,19 @@
 
                         <input type="submit" value="Submit">
                     </form>
-
+                </div>
+                <div id="successPopup" style="display: none;">
+                    <p>Thank you! Your message has been submitted.</p>
+                    <button id="closePopup">Close</button>
                 </div>
             </main>
         </div>
         <aside>
             <section class="welcome">
                 <h2>Artist Statement</h2>
-                <p>My body of work combines <strong>mixed media</strong> and <strong>poetry</strong> to explore <strong>themes of loss, tragedy, and hope.</strong> Much of my work is influenced by growing up in suburban Ohio to Korean immigrant parents. I am interested in capturing how wider economic and cultural forces affect the daily lives of individuals. </p>
+                <p>My body of work combines <strong>mixed media</strong> and <strong>poetry</strong> to explore
+                    <strong>themes of loss, tragedy, and hope.</strong> Much of my work is influenced by growing up in
+                    suburban Ohio to Korean immigrant parents.</p>
             </section>
             <table>
                 <tr>
@@ -76,28 +80,28 @@
                 <tr class="project-row" data-href="project1.html" tabindex="0">
                     <!---Experiment to see if a-href is better-->
                     <td>Project 1</td>
-                    <td>This is an example project description.</td>
-                    <td>2024</td>
+                    <td>Bedside Mourning - oil pastel</td>
+                    <td>2025</td>
                 </tr>
                 <tr class="project-row" data-href="project2.html" tabindex="0">
                     <td>Project 2</td>
-                    <td>This is another project description.</td>
-                    <td>2023</td>
+                    <td>Liminal Spaces - mixed media</td>
+                    <td>2025</td>
                 </tr>
                 <tr class="project-row" data-href="project3.html" tabindex="0">
                     <td>Project 3</td>
-                    <td>This is a sample project description.</td>
-                    <td>2022</td>
+                    <td>Nuance in Color - mixed media</td>
+                    <td>2025</td>
                 </tr>
                 <tr class="project-row" data-href="project4.html" tabindex="0">
                     <td>Project 4</td>
-                    <td>This is a test project description.</td>
-                    <td>2021</td>
+                    <td>Blockprint Studies</td>
+                    <td>2024</td>
                 </tr>
                 <tr class="project-row" data-href="project5.html" tabindex="0">
                     <td>Project 5</td>
-                    <td>This is a final project description.</td>
-                    <td>2020</td>
+                    <td>Mixed Media Studies</td>
+                    <td>2022</td>
                 </tr>
             </table>
         </aside>
